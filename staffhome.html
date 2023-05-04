@@ -8,13 +8,13 @@
 		<title>Staff Home Page</title>
 	</head>
 	<body>
-		<div class="flex_container"> <!-- make it min-height: 100vh and then make footer align-self: flex-end-->
+		<div class="flex_container">
+			<!-- make it min-height: 100vh and then make footer align-self: flex-end-->
 			<header>
 				<nav class="gridcolumns2-1 margin-top16">
 					<div class="flex-row space-around align-center">
-						<a><img src="images/Logo" class="logo"></a>
+						<a><img src="images/Logo" class="logo" /></a>
 						<a href="#">Home</a>
-						<a href="#">My Reports</a>
 						<a href="#">My Profile</a>
 					</div>
 					<div class="flex-row justify-center padding-8 align-center">
@@ -31,35 +31,59 @@
 			</header>
 			<main>
 				<section class="hero padding-8">
-					<h1 class="fontsize64 padding-8">Welcome Back User!</h1>
-						<div class="gridcolumns3 gap16">
-							<div class="flex-column align-center card">
-								<h2 class="name">List of Guest Cases</h2>
-								<p>To find more about lost item cases, click below.</p>
-								<button class="fancy-buttons">View</button>
+					<div class="gridcolumns4 gap16">
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Cases</h3>
+								<h3>#</h3>
 							</div>
-							<div class="flex-column align-center card">
-								<h2 class="name">Active Cases</h2>
-								<p>Here you can find a list of all the lost item cases you are helping.</p>
-								<button class="fancy-buttons">View</button>
+						</a>
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Pending</h3>
+								<h3>#</h3>
 							</div>
-							<div class="flex-column align-center card">
-								<h2 class="name">Contact the Guest</h2>
-								<p>Here you can respond to your active cases for guest on updates in regards to lost items</p>
-								<button class="fancy-buttons">View</button>
+						</a>
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Guests</h3>
 							</div>
-						</div>
-				</section>
-            </main>
-				<footer class="justify-selfend padding-8">
-					<div class="flex-row justify-center gap16">
-						<a href="#">Policy</a>
-						<a href="#">FAQ</a>
-						<a href="#">Contact Us</a>
-						<a href="#">About Us</a>
+						</a>
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Employees</h3>
+							</div>
+						</a>
 					</div>
-				</footer>
+					<div class="gridcolumns1-1-2 gap16">
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Assigned</h3>
+								<h3>#</h3>
+							</div>
+						</a>
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Solved</h3>
+								<h3>#</h3>
+							</div>
+						</a>
+						<a href="#">
+							<div class="flex-column align-center staffcard">
+								<h3>Statistics</h3>
+							</div>
+						</a>
+					</div>
+				</section>
 			</main>
+			<footer class="justify-selfend padding-8">
+				<div class="flex-row justify-center gap16">
+					<a href="#">Policy</a>
+					<a href="#">FAQ</a>
+					<a href="#">Contact Us</a>
+					<a href="#">About Us</a>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

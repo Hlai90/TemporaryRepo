@@ -1,6 +1,6 @@
-* {
-    box-sizing: content-box;
-}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 body {
     margin: 0;
@@ -45,6 +45,16 @@ header, main, footer {
 .gridcolumns3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridcolumns4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridcolumns1-1-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 }
 
 .space-around {
@@ -137,4 +147,60 @@ header, main, footer {
 
 .fit {
     object-fit: cover;
+}
+
+.staffcard{
+    background-color: #A1C6FD;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+    margin: 8px;
+}
+
+.custom_field {
+    font-size: 14px;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+
+.custom_field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+  }
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.custom_field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform:translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+}
+
+.custom_field input:valid + .placeholder,
+.custom_field input:focus + .placeholder {
+    top: 1px;
+    font-size: 10px;
+    color: #222;
+    left: 5%;
 }
